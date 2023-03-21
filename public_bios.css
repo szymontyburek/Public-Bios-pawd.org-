@@ -1,0 +1,128 @@
+h1{
+  font-size: 45px;
+  padding-top: 25px;
+}
+body{
+  text-align: center;
+}
+.collapsible{
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 60%;
+  border: 3px solid white;
+  outline: none;
+  font-size: 20px;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #a6a6a6;
+  color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 30px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  line-height: 40px;
+}
+/*have the image centered and text below*/
+.horizontal_image_layout{
+  text-align: center;
+}
+.vertical_image_layout{
+  text-align: center;
+}
+img{
+  width: 80%;
+  padding-top: 30px;
+}
+/*add a symbol to each button to show whether the content is open or closed(using +/-)*/
+.collapsible:after {
+  content: '+';
+  font-size: 25px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after{
+  content: '-';
+}
+/*for mid-sized screens*/
+@media screen and (min-width: 768px){
+  /*make the button that displays name and + or - smaller*/
+  .collapsible{
+    width: 30%;
+  }
+  /*diversify content around vertical images*/
+  .vertical_image_layout{
+    float: left;
+  }
+  .vertical_image_layout img{
+    padding-right: 20px;
+    height: 350px;
+    width: auto;
+  }
+  .horizontal_image_layout img{
+    width: 45%;
+  }
+  .content{
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+/*for bigger screens*/
+@media screen and (min-width: 1100px){
+  /*make the vertical pictures bigger*/
+  .vertical_image_layout img{
+    padding-top: 35px;
+    height: 400px;
+    width: auto;
+  }
+  /*make the horizontal pics smaller*/
+  .horizontal_image_layout img{
+    padding-top: 45px;
+    width: 35%;
+  }
+  /*text and line-height bigger*/
+  .content{
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+/*for really big screens*/
+@media screen and (min-width: 1800px){
+  /*make the images smaller, you don't want them to take up too much of the screen*/
+  .vertical_image_layout img{
+    height: 400px;
+    padding-top: 45px;
+  }
+  .horizontal_image_layout img{
+    width: 25%;
+  }
+  /*make the text bigger*/
+  .content{
+    font-size: 30px;
+    line-height: 60px;
+  }
+  h1{
+    font-size: 70px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  /*make the names and +/- signs bigger*/
+  .collapsible{
+    font-size: 25px;
+    padding: 20px;
+    width: 45%;
+  }
+  .collapsible:after, .active:after {
+    font-size: 30px;
+  }
+}
