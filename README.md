@@ -9,7 +9,7 @@ Project Difficulties and their solutions below
 
 1) Having a way to display 20 - 30 biographies, while also keeping the scrolling to a minimum for the viewers of the website
 
-2) Making the biographies visibilly pleasing for a majority of screen sizes
+2) Making the biographies visibility pleasing for a majority of screen sizes
 
 ## Solutions:
 
