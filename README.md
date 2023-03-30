@@ -5,7 +5,7 @@ The public biographies of Prescott Area Web Development Members
 
 **_Want to see the project live? Here's the link_**: https://szymontyburek.github.io/Public-Bios-pawd.org-/
 
-###Project Difficulties and their solutions below
+### Project Difficulties and their solutions below
 
 ## Project Difficulties:
 
