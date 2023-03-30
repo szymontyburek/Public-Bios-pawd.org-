@@ -3,7 +3,7 @@ The public biographies of Prescott Area Web Development Members
 
 This project is still a work in progress, thus, it will not be until after additional edits and reviews that this will be integrated into: http://pawd.org/
 
-**_Want to see what it looks like so far? Here's the link_**: https://szymontyburek.github.io/Public-Bios-pawd.org-/
+**_Want to see what it looks like so far?_** https://szymontyburek.github.io/Public-Bios-pawd.org-/
 
 ## Project Difficulties and their solutions below
 
