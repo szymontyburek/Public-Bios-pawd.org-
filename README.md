@@ -1,9 +1,11 @@
 # Public-Bios-pawd.org-
 The public biographies of Prescott Area Web Development Members
 
-### This project is still a work in progress, thus, it will not be until after additional edits and reviews that this will be integrated into: http://pawd.org/
+## This project is still a work in progress, thus, it will not be until after additional edits and reviews that this will be integrated into: http://pawd.org/
 
-Project Difficulties and their solutions below
+**_Want to see the website live? Here's the link_**: http://restaurantseatingsystem.com/
+
+###Project Difficulties and their solutions below
 
 ## Project Difficulties:
 
