@@ -3,7 +3,7 @@ The public biographies of Prescott Area Web Development Members
 
 ### After additional edits and reviews, this will be integrated into: http://pawd.org/
 
-**_Project Difficulties and their solutions below_**
+Project Difficulties and their solutions below
 
 ## Project Difficulties:
 
