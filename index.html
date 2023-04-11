@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="public_bios.css">
+    <script src="index.js" charset="utf-8"></script>
     <title>Members</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -14,21 +15,26 @@
 
     <section class="Don">
       <h2>Founder</h2>
-      <button type="button" class="collapsible" name="button">Don Stephenson</button>
-      <div class="content">
-        <div class="vertical_image_layout">
-          <img src="don.jfif" alt="">
+      <button>Don Stephenson</button>
+      <div class="pop-up" id="pop-up">
+        <div class="pop-up-header">
+          <div class="name">Don Stephenson</div>
+          <button type="button" class="close-button" name="button">&times;</button>
         </div>
-        <p>My information technology experience includes both management and technical delivery, encompassing every significant deployment environment: mainframes, mini's, client/server, mobile devices, embedded systems and cloud services. I am a solution architect, full stack developer and hardware/software integration engineer. My coding experience encompasses proficiency in over 20 languages with high skill in C, C++, SQL and JavaScript. The scope of my project experience includes business, science, factory automation, retail, healthcare, biomedical and entertainment domains.</p>
-        <p>A few notable projects and achievements include:</p>
-          <ul>
-            <li>Architect, lead developer and project manager of the Kelly Blue Book web site.</li>
-            <li>Architect, coder and integration engineer of an electronic health records system for a U.S hospital.</li>
-            <li>Architect and developer of a mobile police reporting application for a major U,S, city.</li>
-            <li>Framework integration engineer on procurement management system for county of Orange, CA.</li>
-            <li>Solution architect and signal processing engineer on AI based automated sonar attendant.</li>
-          </ul>
+        <div class="pop-up-body">
+          <img src="don.jfif" alt="">
+          <p>My information technology experience includes both management and technical delivery, encompassing every significant deployment environment: mainframes, mini's, client/server, mobile devices, embedded systems and cloud services. I am a solution architect, full stack developer and hardware/software integration engineer. My coding experience encompasses proficiency in over 20 languages with high skill in C, C++, SQL and JavaScript. The scope of my project experience includes business, science, factory automation, retail, healthcare, biomedical and entertainment domains.</p>
+          <p>A few notable projects and achievements include:</p>
+            <ul>
+              <li>Architect, lead developer and project manager of the Kelly Blue Book web site.</li>
+              <li>Architect, coder and integration engineer of an electronic health records system for a U.S hospital.</li>
+              <li>Architect and developer of a mobile police reporting application for a major U,S, city.</li>
+              <li>Framework integration engineer on procurement management system for county of Orange, CA.</li>
+              <li>Solution architect and signal processing engineer on AI based automated sonar attendant.</li>
+            </ul>
+        </div>
       </div>
+      <div class="" id="overlay"></div>
     </section>
 
     <section>
@@ -93,7 +99,7 @@
     </section>
 
     <section>
-      
+
     </section>
 
   </body>
