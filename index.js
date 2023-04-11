@@ -1,36 +1,36 @@
-const displayBio = document.querySelectorAll('[data-pop-up-target]')
-const closeBio = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementsById('overlay')
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-displayBio.forEach(button => {
+openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const pop_up = document.querySelector(button.dataset.pop_upTarget)
-    openPopUp(pop_up)
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
   })
 })
 
 overlay.addEventListener('click', () => {
-  const pop_ups = document.querySelectorAll('.pop_up.active')
-  pop_ups.forEach(pop_up => {
-    closePopUp(pop_up)
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
   })
 })
 
-closeBio.forEach(button => {
+closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const pop_up = button.closest('.pop_up')
-    closePopUp(pop_up)
+    const modal = button.closest('.modal')
+    closeModal(modal)
   })
 })
 
-function openPopUp(pop_up) {
-  if (pop_up == null) return
-  pop_up.classList.add('active')
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
   overlay.classList.add('active')
 }
 
-function closePopUp(pop_up) {
-  if (pop_up == null) return
-  pop_up.classList.remove('active')
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
   overlay.classList.remove('active')
 }

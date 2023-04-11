@@ -1,0 +1,96 @@
+h1{
+  font-size: 45px;
+  padding-top: 25px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  /*transform: translate(-50%, -50%);*/ /*delete after designing modal*/
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  overflow: auto;
+
+  /*delete after designing modal
+  max-height: 100%;
+  overflow-y: auto;
+  */
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.modal-header:before{
+  content : "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  height: 1px;
+  width: 90%;
+  border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-header .title {
+  content: "";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  line-height: 25px;
+}
+
+.modal-body .img{
+  text-align: center;
+  padding-top: 20px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
