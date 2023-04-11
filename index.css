@@ -7,6 +7,27 @@ h1{
   box-sizing: border-box;
 }
 
+.container img{
+  width: 40%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  border: 2px solid green;
+}
+
+.banner {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 100%;
+  background-color: gray;
+  transform: translate(-50%, -50%);
+  border: 2px solid green;
+}
+
 .modal {
   position: fixed;
   top: 50%;
