@@ -1,6 +1,6 @@
 h1{
-  font-size: 45px;
-  padding-top: 25px;
+  font-size: 30px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -23,12 +23,12 @@ h1{
 }
 
   img{
-    border: 1px solid black;q
+    border: 1px solid black;
   }
 
 .container {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -54,7 +54,6 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  /*transform: translate(-50%, -50%);*/ /*delete after designing modal*/
   transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
@@ -62,11 +61,6 @@ h1{
   background-color: white;
   width: 100%;
   overflow: auto;
-
-  /*delete after designing modal
-  max-height: 100%;
-  overflow-y: auto;
-  */
 }
 
 .modal.active {
@@ -140,4 +134,72 @@ h1{
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+@media (min-width: 500px){
+  .container{
+    width: 40%;
+    height: 40%;
+  }
+
+}
+
+@media (min-width: 768px){
+  h1{
+    font-size: 40px;
+  }
+
+  .header p{
+    font-size: 15px;
+  }
+
+  .container{
+    width: 60%;
+    height: 60%;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .banner h3{
+    font-size: 25px;
+  }
+
+  .banner p{
+    font-size: 20px;
+  }
+
+  .modal{
+    width: 75%;
+    height: auto;
+    padding: 35px;
+  }
+
+  .modal-header button, .modal-header .title{
+    font-size: 45px;
+  }
+
+  .img img{
+    width: 40%;
+    height: 40%;
+  }
+
+  .modal-body{
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1200px){
+  .header h1{
+    font-size: 80px;
+  }
+
+  /*
+  .modal{
+    transform: translate(-50%, -50%);
+  }
+  */
 }
