@@ -18,7 +18,6 @@ h1{
 .container img{
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -115,7 +114,7 @@ h1{
   padding-top: 20px;
 }
 
-.img img{
+img{
   width: 50%;
   height: 50%;
 }
@@ -178,7 +177,7 @@ h1{
     padding: 35px;
   }
 
-  .modal-header button, .modal-header .title{
+  .modal-header .close-button, .modal-header .title{
     font-size: 45px;
   }
 
@@ -234,7 +233,7 @@ h1{
     height: 30%;
   }
 
-  .modal-header .title, .modal-header button{
+  .modal-header .title, .modal-header .close-button{
     font-size: 60px;
   }
 }
@@ -257,9 +256,32 @@ h1{
     font-size: 15px;
   }
 
-  /*
-  .modal{
-    transform: translate(-50%, -50%);
+  .modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
   }
-  */
+
+  .modal-header:before{
+    left: 0;
+    width: 100%;
+  }
+
+  .img img{
+    width: 110%;
+    height: 110%;
+  }
+
+  .img{
+    float: left;
+    padding: 35px 40px 10px 0px;
+    width: 20%;
+    height: 20%;
+  }
+
+  .modal-body{
+    font-size: 25px;
+  }
+
 }
