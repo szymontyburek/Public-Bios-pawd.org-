@@ -18,6 +18,7 @@ h1{
 .container img{
   width: 100%;
   height: auto;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
@@ -194,7 +195,34 @@ h1{
 
 @media (min-width: 1200px){
   .header h1{
-    font-size: 80px;
+    font-size: 50px;
+  }
+
+  .header p{
+    font-size: 18px;
+  }
+
+  .container{
+    width: 40%;
+    height: 40%;
+  }
+
+  /*make picture bigger and give them color on hover*/
+  .container img{
+    transition: 1s ease;
+  }
+
+  .container img:hover{
+    border: 1px solid black;
+
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+
+    border-radius:50%;
+    transition: 1s ease;
   }
 
   /*
