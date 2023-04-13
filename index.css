@@ -225,6 +225,19 @@ h1{
     transition: 1s ease;
   }
 
+  .img img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .modal-header .title, .modal-header button{
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1800px){
+
+
   /*
   .modal{
     transform: translate(-50%, -50%);
