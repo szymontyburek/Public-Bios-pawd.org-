@@ -203,8 +203,12 @@ h1{
   }
 
   .container{
-    width: 40%;
-    height: 40%;
+    width: 55%;
+    height: 55%;
+  }
+
+  .grid-container{
+    grid-template-columns: 33% 33% 33%;
   }
 
   /*make picture bigger and give them color on hover*/
@@ -235,8 +239,23 @@ h1{
   }
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1500px){
+  .container{
+    width: 50%;
+    height: 50%;
+  }
 
+  .grid-container{
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .banner h3{
+    font-size: 20px;
+  }
+
+  .banner p{
+    font-size: 15px;
+  }
 
   /*
   .modal{
