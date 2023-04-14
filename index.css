@@ -137,11 +137,23 @@ img{
 }
 
 @media (min-width: 500px){
+  h1{
+    font-size: 40px;
+  }
+
   .container{
     width: 40%;
     height: 40%;
   }
 
+  .modal-img img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .modal-body{
+    line-height: 35px;
+  }
 }
 
 @media (min-width: 768px){
