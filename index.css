@@ -109,7 +109,7 @@ h1{
   line-height: 25px;
 }
 
-.modal-body .img{
+.modal-body .modal-img{
   text-align: center;
   padding-top: 20px;
 }
@@ -186,7 +186,7 @@ img{
     font-size: 70px;
   }
 
-  .img img{
+  .modal-img img{
     width: 40%;
     height: 40%;
   }
@@ -249,14 +249,14 @@ img{
     width: 100%;
   }
 
-  .img img{
+  .modal-img img{
     width: 100%;
     height: 100%;
     padding-top: 12px;
     border: none;
   }
 
-  .img{
+  .modal-img{
     float: left;
     padding: 0 20px;
     width: 30%;
@@ -308,7 +308,7 @@ img{
     width: 60%;
   }
 
-  .img{
+  .modal-img{
     width: 30%;
     height: 30%;
   }
@@ -344,7 +344,7 @@ img{
     font-size: 20px;
   }
 
-  .img{
+  .modal-img{
     width: 25%;
     height: 25%;
   }
