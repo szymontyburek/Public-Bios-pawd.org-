@@ -146,29 +146,30 @@ img{
 
 @media (min-width: 768px){
   h1{
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .header p{
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .container{
-    width: 60%;
-    height: 60%;
+    width: 55%;
+    height: 55%;
   }
 
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
+    grid-row-gap: 50px;
   }
 
   .banner h3{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .banner p{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .modal{
@@ -177,8 +178,12 @@ img{
     padding: 35px;
   }
 
-  .modal-header .close-button, .modal-header .title{
+  .modal-header .title{
     font-size: 45px;
+  }
+
+  .modal-header .close-button{
+    font-size: 70px;
   }
 
   .img img{
@@ -201,13 +206,9 @@ img{
     font-size: 18px;
   }
 
-  .container{
-    width: 55%;
-    height: 55%;
-  }
-
   .grid-container{
     grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 20px;
   }
 
   /*make picture bigger and give them color on hover*/
@@ -228,32 +229,12 @@ img{
     transition: 1s ease;
   }
 
-  .img img{
-    width: 30%;
-    height: 30%;
+  .modal-header .title{
+    font-size: 45px;
   }
 
-  .modal-header .title, .modal-header .close-button{
+  .modal-header .close-button{
     font-size: 60px;
-  }
-}
-
-@media (min-width: 1500px){
-  .container{
-    width: 50%;
-    height: 50%;
-  }
-
-  .grid-container{
-    grid-template-columns: 33% 33% 33%;
-  }
-
-  .banner h3{
-    font-size: 20px;
-  }
-
-  .banner p{
-    font-size: 15px;
   }
 
   .modal-header{
@@ -278,14 +259,33 @@ img{
   .img{
     float: left;
     padding: 0 20px;
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
   }
 
   .modal-body{
     font-size: 20px;
     line-height: 50px;
     padding-top: -5px;
+  }
+
+  .modal{
+    width: 80%;
+  }
+}
+
+@media (min-width: 1500px){
+  .container{
+    width: 50%;
+    height: 50%;
+  }
+
+  .banner h3{
+    font-size: 20px;
+  }
+
+  .banner p{
+    font-size: 15px;
   }
 
 }
@@ -300,11 +300,52 @@ img{
     font-size: 100px;
   }
 
+  .modal-header .title{
+    font-size: 60px;
+  }
+
   .modal{
     width: 60%;
   }
 
+  .img{
+    width: 30%;
+    height: 30%;
+  }
+
   .modal-body{
     font-size: 22px;
+  }
+
+  .grid-container{
+    grid-row-gap: 80px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .header h1{
+    font-size: 60px;
+  }
+
+  .header p{
+    font-size: 25px;
+  }
+
+  .banner{
+    height: 90px;
+    padding: 8px 12px;
+  }
+
+  .banner h3{
+    font-size: 25px;
+  }
+
+  .banner p{
+    font-size: 20px;
+  }
+
+  .img{
+    width: 25%;
+    height: 25%;
   }
 }
